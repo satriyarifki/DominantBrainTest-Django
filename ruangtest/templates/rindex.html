@@ -1,0 +1,77 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container pt-2" style="margin-top: 5rem">
+  <h1>jawablah dengan jujur</h1>
+  <div class="container">
+    <br /><br /><br />
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Dapat menirukan kalimat sederhana</div>
+              <div>
+                <div class="row">
+                  <div class="col justify-content-start">Ya</div>
+                  <div class="col d-flex justify-content-end">Tidak</div>
+                </div>
+                <input type="range" class="form-range" min="0" max="2" id="customRange1" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Dapat meniru kembali 4-5 urutan kata</div>
+              <div>
+                <div class="row">
+                  <div class="col justify-content-start">Ya</div>
+                  <div class="col d-flex justify-content-end">Tidak</div>
+                </div>
+                <input type="range" class="form-range" min="0" max="2" id="customRange2" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Mengulangi kalimat yang sudah didengarnya</div>
+              <div>
+                <div class="row">
+                  <div class="col justify-content-start">Ya</div>
+                  <div class="col d-flex justify-content-end">Tidak</div>
+                </div>
+                <input type="range" class="form-range" min="0" max="2" id="customRange3" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Menyanyikan lagu anak-anak lebih dari 20 lebih lagu</div>
+              <div>
+                <div class="row">
+                  <div class="col justify-content-start">Ya</div>
+                  <div class="col d-flex justify-content-end">Tidak</div>
+                </div>
+                <input type="range" class="form-range" min="0" max="2" id="customRange4" />
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Mengelompokkan benda dengan berbagai cara menurut fungsinya : misalnya peralatan makan, peralatan mandi, peralatan kebersihan</div>
+              <div>
+                <div class="row">
+                  <div class="col justify-content-start">Ya</div>
+                  <div class="col d-flex justify-content-end">Tidak</div>
+                </div>
+                <input type="range" class="form-range" min="0" max="2" id="customRange5" />
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

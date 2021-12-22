@@ -1,0 +1,26 @@
+Migrations for 'ruangtest':
+  ruangtest\migrations\0008_auto_20211221_1926.py
+    - Alter field ans1 on answer
+    - Alter field ans10 on answer
+    - Alter field ans11 on answer
+    - Alter field ans12 on answer
+    - Alter field ans13 on answer
+    - Alter field ans14 on answer
+    - Alter field ans15 on answer
+    - Alter field ans16 on answer
+    - Alter field ans17 on answer
+    - Alter field ans18 on answer
+    - Alter field ans19 on answer
+    - Alter field ans2 on answer
+    - Alter field ans20 on answer
+    - Alter field ans21 on answer
+    - Alter field ans22 on answer
+    - Alter field ans3 on answer
+    - Alter field ans4 on answer
+    - Alter field ans5 on answer
+    - Alter field ans6 on answer
+    - Alter field ans7 on answer
+    - Alter field ans8 on answer
+    - Alter field ans9 on answer
+    - Alter field test on answer
+    - Alter field hasil on test

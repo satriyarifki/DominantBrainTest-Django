@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% load static %} {% block jud %}{{judul}}{% endblock jud %} {% block content %}
+<div class="container py-5">
+	<div class="px-4 py-5 my-5 text-center">
+		<img class="d-block mx-auto mb-4" src="{% static 'img\congrats.jpg' %}" alt="" width="150" height="auto" />
+		<h1 class="display-5 fw-bold">{{nam.nama}}</h1>
+		<div class="col-lg-6 mx-auto">
+			{% csrf_token %}
+			<h2>{{has}}</h2>
+			{% if has == kanan %}
+			<p class="lead mb-4">
+				Otak kanan dinilai lebih baik untuk mengerjakan hal-hal yang berkaitan dengan kreativitas. Orang yang dominan menggunakan otak kanan digambarkan lebih mahir dalam hal-hal, seperti: Seni Musik, Visual atau gambar, Pemikiran
+				berdasarkan intuisi, Isyarat nonverbal, Imajinasi
+			</p>
+			{% elif has == kiri %}
+			<p class="lead mb-4">
+				Otak kiri dianggap lebih baik untuk mengerjakan tugas-tugas yang melibatkan logika, bahasa, dan pemikiran analitis. Orang yang dominan menggunakan otak kiri digambarkan sebagai orang yang lebih ahli dalam hal-hal berikut ini:
+				Bahasa, seperti menulis dan membaca, Matematika, Pemikiran kritis dan logis, Analisis, Pemikiran berdasarkan fakta
+			</p>
+			{% endif %}
+			<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+				<a href="{% url 'index' %}"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">Back to Homepage</button></a>
+				{% comment %} <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> {% endcomment %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

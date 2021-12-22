@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %} {% block jud %}{{judul}}{% endblock jud %} {% block content %}
+<!-- content -->
+<div class="p-5 mb-4 bg-light container-fluid jumbo">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-6">
+				<h2 class="display-5 fw-bold" style="text-align: center; font-size: 40px">Yuk Cari Tahu!!! Kamu Tim Otak Kiri atau Kanan?</h2>
+				<p style="font-size: 20px; text-align: center">
+					disini merupakan ruang test untuk mengetahui otak mana yang lebih dominan pada diri kamu dengan cara menjawab sebuah pernyataan dengan jawaban ya atau tidak. jawaban harus disesuaikan dengan kemampuan diri. lalu dengan begitu kita
+					dapat mengetahui potensi terbaik dari diri kita.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container pt-5">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-md col-sm-8" style="align-items: center">
+			<form method="post">
+				<div class="mb-3">{% csrf_token %} {{namaForm}} {% comment %} <input type="text" class="form-control" id="exnama" placeholder="Masukkan Nama..." /> {% endcomment %}</div>
+				<button type="submit" class="btn btn-primary">Start Test</button>
+			</form>
+		</div>
+		<div class="col"></div>
+	</div>
+</div>
+<!-- content -->{% endblock content %}

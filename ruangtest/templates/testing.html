@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container py-5" style="margin-top: 40px">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-md-8 d-flex justify-content-center">
+			<form method="post" class="row">
+				{% csrf_token %}
+				<div class="py-2">
+					<table class="table table-info table-striped">
+						{{ testForm }}
+					</table>
+				</div>
+				<br />
+				<button type="submit" class="btn btn-primary" style="width: 100px">Selesai</button>
+			</form>
+		</div>
+		<div class="col"></div>
+	</div>
+</div>
+{% endblock content %}

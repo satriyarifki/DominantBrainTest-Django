@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="container pt-5" style="margin-top: 4rem">
+	<div class="row">
+		<div class="col-md-5" style="padding-top: 9rem; padding-bottom: 9rem; padding-right: 0rem">
+			<h2 style="font-family: 'Montserrat Alternates'; font-weight: bold">
+				Pendeteksi <br />
+				Kepribadian
+				<br />
+			</h2>
+			<p style="font-family: 'Montserrat Alternates'">Yuk Cari Tahu Otak Kiri atau Kanan yang Dominan Dada Diri Kamu!!!</p>
+			<p style="font-family: 'Montserrat Alternates'">
+				Kami menciptakan sebuah system pendeteksi kepribadian berbasis web. hal yang dideteksi adalah otak mana yang lebih dominan pada diri kamu. system ini menggunakan metode forward chaining untuk mengolah data dari sistem pakar.
+			</p>
+			<a href="{% url 'ruangtest:index' %}" class="btn btn-primary" role="button">Let's Try</a>
+		</div>
+		<div class="col-md-7"><img src="{% static "img\look.jpg" %}" class="img-fluid shadow-lg rounded float-end " alt="kepribadian" style="width: 900px;" /></div>
+	</div>
+</div>
+
+{% endblock content %}

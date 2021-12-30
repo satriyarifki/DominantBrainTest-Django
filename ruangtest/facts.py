@@ -14,9 +14,9 @@ def rules(fakt):
     print(tota)
     print(toti)
     if tota>toti :
-        return resulte.objects.get(id=1)
+        return resulte.objects.get(id=2)
     else :
-        return resulte.objects.get(id=2)   
+        return resulte.objects.get(id=1)   
       
                
 

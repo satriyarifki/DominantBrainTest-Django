@@ -57,8 +57,8 @@ def testing(request):
             
             return render(request, 'result.html', {
                 'has' : rules(fact), 'nam' : tdata ,
-                'kanan' : resulte.objects.get(id=2),
-                'kiri'  : resulte.objects.get(id=1),})
+                'kanan' : resulte.objects.get(id=1),
+                'kiri'  : resulte.objects.get(id=2),})
             
     print(fact)
     context = {
@@ -74,7 +74,7 @@ def result(request):
     context = {
         'judul' :'Hasil Test Kamu',
         'dataTest' : dat,
-        'kanan' : resulte.objects.get(id=2),
-        'kiri'  : resulte.objects.get(id=1),
+        'kanan' : resulte.objects.get(id=1),
+        'kiri'  : resulte.objects.get(id=2),
     }
     return render(request, 'result.html', context)

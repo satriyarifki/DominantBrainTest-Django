@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path, WindowsPath
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c5ti3&8-vk^t49+h-2zyoh2((h&l5@+qvm2*4$-d7@az$4-f=k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'webbraintest.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,14 +79,20 @@ WSGI_APPLICATION = 'myweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'data_uas',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST':'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'braintest',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST':'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
@@ -128,6 +135,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     WindowsPath.joinpath(BASE_DIR, 'static',)]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
